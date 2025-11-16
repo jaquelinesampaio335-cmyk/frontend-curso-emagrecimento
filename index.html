@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Curso Emagrecimento — Transforme-se em 3 meses</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Curso Emagrecimento</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html" class="btn">Entrar / Comprar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>4 módulos. 40 aulas. 3 meses para transformar seu corpo.</h2>
+      <p>Nutrição, exercícios e motivação — tudo organizado para você seguir passo a passo.</p>
+      <a href="login.html" class="cta">Começar Agora</a>
+    </section>
+
+    <section class="features">
+      <h3>O que você vai aprender</h3>
+      <ul>
+        <li>Hábitos alimentares saudáveis</li>
+        <li>Treinos para qualquer nível</li>
+        <li>Rotina prática e sustentável</li>
+      </ul>
+    </section>
+
+    <section class="modules-preview">
+      <h3>Conteúdo do curso</h3>
+      <ol id="module-list"></ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Curso Emagrecimento — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // basic static module preview (will be replaced by dashboard data)
+    const MODULES = [
+      "Início da Transformação",
+      "Nutrição Inteligente",
+      "Corpo em Movimento",
+      "Resultados e Consistência"
+    ];
+    const list = document.getElementById('module-list');
+    MODULES.forEach(m=>{const li=document.createElement('li');li.textContent=m;list.appendChild(li);});
+  </script>
+</body>
+</html>
